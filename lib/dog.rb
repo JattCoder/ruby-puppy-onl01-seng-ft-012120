@@ -19,7 +19,7 @@ class Dog
     @name
   end
   def save
-    
+
   end
 end
 
