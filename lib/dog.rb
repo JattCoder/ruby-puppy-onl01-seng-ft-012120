@@ -5,9 +5,7 @@ class Dog
     @@all.push(name)
   end
   def self.all
-      @@all.each do |element|
-        self.element
-      end
+      @@all
   end
   def self.clear_all
     @@all = Array.new
