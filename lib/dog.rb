@@ -9,6 +9,12 @@ class Dog
     @@all << self
   end
 
+  def print_all
+    @@all.each do |dogname|
+      puts dogname
+    end
+  end
+
   def self.all
     @@all.each do |dog|
       puts dog.name
