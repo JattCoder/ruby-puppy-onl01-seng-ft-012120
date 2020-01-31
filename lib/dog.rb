@@ -1,28 +1,24 @@
 class Dog
+
+  attr_accessor :name
+
   @@all = []
+
   def initialize(name)
     @name = name
-    @@all.push(name)
+    @@all << self
   end
+
   def self.all
-      @@all
-  end
-  def self.clear_all
-    @@all = Array.new
-  end
-  def self.print_all
-    @@all.each do |dogname|
-      puts dogname
+    @@all.each do |dog|
+      puts dog.name
     end
   end
-  def name
-    @name
-  end
-  def save
 
+  def self.clear_all
+    @@all.clear
   end
+
 end
 
 pluto = Dog.new("Pluto")
-pluto.name
-pluto.save
