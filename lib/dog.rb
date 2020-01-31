@@ -5,7 +5,7 @@ class Dog
     @@all.push(name)
   end
   def self.all
-      @@all << @name
+      @@all << self.name
   end
   def self.clear_all
     @@all = Array.new
